@@ -6,7 +6,7 @@ Database dump is located in the `DB` folder.
 ## Configuration
 If you have a different host, update the following in `../foodtrucks.pro/includes/config.php`:
 
-```JSON
+```php
 'site_url' => 'http://localhost/foodtrucks.pro/',
 'style_file' => 'http://localhost/foodtrucks.pro/css/stylesheet.css',
 ```
