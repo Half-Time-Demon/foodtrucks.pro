@@ -16,9 +16,9 @@
 
         ),
 
-        'site_url'=>'http://localhost/programowanie_w_internecie_Projekt/',
+        'site_url'=>'http://localhost/foodtrucks.pro/',
 
-        'style_file'=>'http://localhost/programowanie_w_internecie_Projekt/css/stylesheet.css',
+        'style_file'=>'http://localhost/foodtrucks.pro/css/stylesheet.css',
 
         'db' => array(
 
