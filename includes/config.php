@@ -10,35 +10,23 @@
 
         'allow_ip' => array(
 
-            '192.168.1.3',
-
             'localhost',
 
-            '127.0.0.1',
-
-            '78.56.45.90',
-
-            '88.119.29.90',
-
-            '88.118.99.255',
-
-            '78.61.250.200',
-
-            '188.69.197.114'
+            '127.0.0.1'     
 
         ),
 
-        'site_url'=>'http://localhost:3000/programowanie_w_internecie_Projekt/',
+        'site_url'=>'http://localhost/programowanie_w_internecie_Projekt/',
 
-        'style_file'=>'http://localhost:3000/programowanie_w_internecie_Projekt/css/stylesheet.css',
+        'style_file'=>'http://localhost/programowanie_w_internecie_Projekt/css/stylesheet.css',
 
         'db' => array(
 
             'server' => 'localhost',
 
-            'username' => 'dev',
+            'username' => 'root',
 
-            'password' => 'devpassword',
+            'password' => '',
 
             'db_name' => 'foodtrucks'
 
@@ -46,9 +34,9 @@
 
         'info' => array(
 
-            'addres' => 'Lentvaris, Topolo g. 8',
+            'addres' => 'Kaunas, Rugiu g. 8',
 
-            'phone' => '+370 612 86875',
+            'phone' => '+370 674 86875',
 
             'email' => 'info@foodtrucks.pro',
 
