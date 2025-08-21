@@ -1,0 +1,105 @@
+.small-icons{
+    width:68px;
+    height:79px;
+    padding-top: 10px;
+    vertical-align: top;
+    object-fit:cover;
+    object-position:50% 50%;
+}
+
+.how-we-work{
+    font-size: 16px;
+    h1{
+        font-size: 64px;
+        text-align: center;
+        font-family: seguibli;
+    }
+}
+.blocks{
+    text-align: center;
+    .block{
+        max-width: 400px;
+        min-height: 271px;
+        border: 3px solid #323232;
+        margin: 20px;
+        padding: 10px;
+        position: relative;
+        display: inline-block;
+        .text-block{
+            
+            width: 280px;
+            min-height: 200px;
+            padding-left: 15px;
+            padding-top: 30px;
+            position: relative;
+            display: inline-block;
+            background-position-y: -20;
+            li{
+                text-align: left;
+                font-size: 20px;
+                margin-bottom: 20px;
+                font-family: seguili;
+            }
+            p{
+                display: grid;
+                text-align: initial;
+                text-indent: 20px;
+                font-family: seguili;
+            }
+            @media only screen and (max-width: 434px){
+                li{
+                    text-align: center;
+                    &::before{//pukico ne pracuji tszeba isprawic
+                        visibility: hidden;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1250px) and (max-width: 1420px){
+    .blocks{
+        padding: 5%;
+        .left-block{
+            margin-right: 50px;
+        }
+        .right-block{
+            margin-left: 50px;
+        }
+        .top-block{
+            margin-bottom: 50px;
+        }
+        .bottom-block{
+            margin-top: 50px;
+        }
+}}
+@media only screen and (min-width: 1420px) and (max-width: 1700px){
+    .blocks{
+        padding: 5%;
+        padding-right: 10%;
+        padding-left: 10%;
+        .left-block{
+            margin-right: 100px;
+        }
+        .right-block{
+            margin-left: 100px;
+        }
+        .top-block{
+            margin-bottom: 75px;
+        }
+        .bottom-block{
+            margin-top: 75px;
+        }
+}}
+@media only screen and (min-width: 1700px){
+    .blocks{
+        padding: 5%;
+}}
+@media only screen and (max-width: 350px){
+    .blocks{
+        .block{
+            margin: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+}}

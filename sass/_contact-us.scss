@@ -1,0 +1,187 @@
+.contact-us{
+    
+    >h1{
+        font-size: 64px;
+        text-align: center;
+        font-family: seguibli;
+    }
+    .contact-box{
+        text-align: center;
+        .form-block{
+            display: inline-block;
+            margin: 25px;
+            height: 460px;
+            //height: 45px;
+            >h2{
+                font-size: 40px;
+                font-family: seguibli;
+            }
+            p{
+                font-family: seguili;
+                text-align: initial;                
+                margin: 5px 40px;
+
+                height: 15px;
+                font-size: 15px;
+                //font-style: italic;
+                font-weight: bold;
+            }
+            input{
+                width: 170px;
+                min-height: 25px;
+                border: 2px solid rgba(26, 25, 25, 0.616);
+                border-radius: 6px;
+            }
+            .input-box{
+                padding: 3px 1px;
+                margin: 1px;
+                width: 245px;
+                height: 40px;
+            }
+            .form-blocks{
+                display: flex;
+                flex: auto;
+                margin: 2px;
+            }
+            .flex-message-box{
+                margin-top: 5px;
+                .message-box{
+                    padding: 1px;
+                    margin: 1px;
+                    #textbox{
+                        width: 415px;
+                        max-width: 415px;
+                        min-width: 350px;
+                        height: 200px;
+                        border: 2px solid rgba(26, 25, 25, 0.616);
+                        border-radius: 6px;
+                        inline-size: -webkit-fill-available;
+                    }
+                }
+            }
+            .button-box{
+                padding: 1px;
+                margin: 3px;
+
+                button{
+                    font-family: seguili;
+                    width: 100px;
+                    height: 30px;
+                    border: 2px solid rgba(26, 25, 25, 0.616);
+                    border-radius: 6px;
+                    font-size: 16px;
+                    background-color: rgba(199, 194, 194, 0.74);
+                    &:hover{
+                        background-color: rgba(77, 73, 73, 0.74);
+                    }
+                }
+            }
+        }
+        .contact-info{
+            display: inline-block;
+            vertical-align: text-bottom;
+            padding: 0px 30px;
+            margin: 30px;
+            .contact-info-box{
+                width: 400px;
+                height: 150px;
+                border: 2px solid rgba(26, 25, 25, 0.616);
+                margin: 10px;
+                padding: 5px;
+                h3{
+                    text-align: center;
+                    font-family: seguibli;
+                    span{
+                        font-size: 32px;
+                        font-weight: 700;
+                    }
+                }
+                P{
+                    font-family: seguili;
+                    font-size: 18px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .map-box{
+        text-align: center;
+        margin: 20px 0px;
+        .map{
+    
+            width: 500px;
+            height: 400px;
+            display: contents;
+            iframe{
+                width: 500px;
+                height: 400px;
+                border: 2px solid black;
+            }
+        }
+    }
+}
+//@media only screen and (min-width: 651px) and (max-width: 550px){}
+@media only screen and (max-width: 550px){
+.contact-us{
+    .contact-box{
+        .form-block{
+            margin: 25px 0px;
+            padding: 0px 15px;
+            max-width: 498px;
+            width: 100%;
+            input{
+                max-width: 170px;
+                width: 100%;
+            }
+            .flex-message-box{
+                text-align: initial;
+                .message-box #textbox{
+                    min-width: 150px;
+                }
+            }
+            .input-box{
+                text-align: initial;
+            //    width: 195px;
+            }
+            p{
+                margin: 5px 0px;
+            }
+        }
+        .contact-info{
+            max-width: 400px;
+            min-width: 250px;
+            width: 100%;
+            padding: 0px;
+            margin: 30px 0px;
+            .contact-info-box{
+                max-width: 400px;
+                min-width: 250px;
+                width: auto;
+                margin: 15px;
+            }
+        }
+    }
+    .map-box{
+        margin: 20px 15px;
+        .map{    
+            width: 100%;
+            iframe{
+                width: 100%;
+            }
+        }
+    }
+}}
+
+.error, .required{
+    color: red;
+}
+.success{
+    color: rgb(121, 211, 31);
+}
+.succ-err{
+    text-align: initial;                
+    display: block;
+    margin: 15px 40px;
+    font-family: seguibli;
+    //font-weight: bold;
+}

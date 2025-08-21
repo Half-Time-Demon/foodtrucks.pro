@@ -1,0 +1,27 @@
+footer{
+    height: 100px;
+    background-color: rgb(23,32,36);
+    margin-top: 50px;
+    vertical-align: bottom;
+    font-family: seguili;
+    box-shadow: 0px -15px 100px 20px #000;
+    border-top: 3px solid #8e8886;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+}
+#footer-inner{
+    height: 100%;
+    width: 100%;
+}
+#footer-widgets{
+    height: 80%;
+}
+#footer-bottom{
+    height: 20%;
+}
+#copyright{
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+}

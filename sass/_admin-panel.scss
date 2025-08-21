@@ -1,0 +1,58 @@
+
+.admin-menu{
+    width: 250px;
+    height: 100%;
+    
+}
+
+.admin-panel-main{
+    //display: inline-block;
+    //position: absolute;
+    display: flow-root;
+}
+.float-left{
+    float: left;
+}
+
+.menu{
+    .menu-center{
+        text-align: center;
+        //background-color: rgb(32, 32, 32);
+        height: 40px;
+        .menu-line{
+            padding-top: 10px;
+            ul{
+                text-align: right;
+                
+                li{
+                    padding: 10px;
+                    //background-color: rgba($color: #929090, $alpha: 0.5);
+                    display: inline;
+                    a{
+                        color: rgb(226, 223, 223);
+                    }
+                }
+                li:hover{
+                    background-color: rgba($color: #141212, $alpha: 0.5);
+                    a{
+                        color: rgb(238, 183, 183);
+                    }
+                }
+
+                .curent-page{
+                    a{
+                       color: rgb(207, 85, 85);
+                    }
+                    background-color: rgba($color: #6e6c6c, $alpha: 0.7);
+                }
+            }
+            margin: 0px 50px;        
+        }
+    }
+}
+
+h2{
+    font-size: 48px;
+    text-align: center;
+    font-family: seguibli;
+}

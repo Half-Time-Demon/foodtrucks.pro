@@ -1,0 +1,17 @@
+body {
+    background-color: #FCF0E4
+}
+
+#catpage {
+    height: 100px;
+    text-align: center;
+}
+
+#text{
+    font-size: 500%;
+}
+
+#catpic{
+    height:400px;
+    width:400px;
+}

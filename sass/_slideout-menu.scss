@@ -1,0 +1,158 @@
+.menu {
+  background-color: #1D1F20;
+  background-image: linear-gradient(145deg, #1D1F20, #404348);
+  padding: 30px;
+  a .menu-header .menu-header-title{
+    font-family: seguibli;
+    color: #ecebeb;
+    font-size: 36px;
+    &:hover{
+      color:#13aff0;
+    }
+  }
+  .menu-section{
+    .menu-section-title{
+      font-family: seguili;
+      padding-left: 10px;
+      font-size: 20px;
+      color: #c0c0c0;
+    }
+    .menu-section-list{
+      padding-left: 20px;
+      li{
+        a{
+          span {
+            font-family: seguili;
+            position: relative;
+            color: #afafaf;
+    
+            &:after {
+              display: block;
+              background-color: #13aff0;
+              position: absolute;
+              bottom: -30%;
+              left: 0;
+              content: '';
+              width: 100%;
+              height: 2px;
+              visibility: hidden;
+              -moz-transform: scaleX(0);
+              -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+              transform-origin: bottom left;
+            @include transition( all .25s ease-out );
+            }
+            &:hover{
+              color:#13aff0;
+            }
+          }
+          &:hover > span:after {
+            visibility: visible;
+            -moz-transform: scaleX(1);
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+          }
+        }
+        &.sfHover > a > span:after {
+          visibility: visible;
+          -moz-transform: scaleX(1);
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+        
+        }
+      }
+    }
+  }
+}  
+.slideout-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  //overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+}
+
+.slideout-menu-left {
+  left: 0;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+
+/**
+ * hamburger
+ */
+.btn-hamburger {
+  border: none;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: rgba(32,32,32,0.30);
+  outline:none;
+  width: 70px;
+  height: 70px;
+  padding: 8px;
+  z-index: 2;
+
+  &:hover{
+    background-color: rgba(32,32,32,0.60);
+    .burgerline1{
+      background-color:#13aff0;
+    }
+    .burgerline2{
+      background-color:#13aff0;
+    }
+    .burgerline3{
+      background-color:#13aff0;
+    }
+  }
+  .burgerline1{
+    top:0;
+  }
+  .burgerline2{
+    top:50%;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .burgerline3{
+    top:100%;
+  }
+  div{
+    background-color: rgb(223, 217, 217);
+    width: 100%;
+    height: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transform-origin: center;
+    opacity: 1;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+  }
+}
+
+@media all and (min-width:40em) {
+
+  .btn-hamburger {
+    top: 20px;
+    left: 30px;
+  }
+}

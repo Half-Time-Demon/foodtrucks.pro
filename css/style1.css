@@ -1,0 +1,58 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+.main-photo{
+    width: 100%;
+}
+
+/*-----bloki z tekstami how we work-----*/
+.small-icons{
+    width:68px;
+    height:69px;
+    padding-top: 5px;
+    object-fit:cover;
+    object-position:50% 50%;
+}
+
+.how-we-work{
+    font-size: 16px;
+}
+.how-we-work h1{
+    font-size: 64px;
+    text-align: center;
+}
+
+.block{
+    width: 350px;
+    height: 200px;
+    border: 3px solid #323232;
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+}
+
+.text-block{
+    width: 250px;
+    height: 250px;
+    padding-left: 15px;
+    padding-top: 30px;
+    position: absolute;
+    display: inline-block;
+    background-position-y: -20;
+}
+
+.text-block li{
+    font-size: 20px;
+    margin-bottom: 20px;
+}

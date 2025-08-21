@@ -1,0 +1,46 @@
+ // just need import files this command : @import
+//exemple: @import "plugins/magnific-popup";
+
+@charset "utf-8";
+
+//import mixins
+@import "mixins";
+
+//import zero-style абнуление стилей
+@import "zero";
+
+//import fonts
+@import "fonts";
+
+//import header
+@import "header";
+
+//import slideout menu
+@import "slideout-menu";
+
+//import main
+@import "main";
+
+//import Contact us
+@import "contact-us";
+
+//import Home or About Us
+@import "home";
+
+//import How we work
+@import "how-we-work";
+
+//import How it made
+@import "how-it-made";
+
+//import login
+@import "login";
+
+//import admin-panel
+@import "admin-panel";
+
+//import registration-user
+@import "registration-user";
+
+//import footer
+@import "footer";

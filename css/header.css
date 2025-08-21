@@ -1,0 +1,112 @@
+body{
+    background-color: brown;
+}
+
+.toggle_navigation {
+    position: fixed;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    z-index: 301;
+    cursor: pointer;
+    background-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+@media screen and (max-height: 480px), screen and (max-width: 650px){
+.toggle_navigation {
+    width: 55px;
+    top: 3px;
+    left: 3px;
+}}
+@media only screen and (min-width: 651px) and (max-width: 949px){
+.toggle_navigation {
+    top: 20px;
+    left: 20px;
+}}
+@media only screen and (min-width: 950px) and (max-width: 1250px){
+.toggle_navigation {
+    top: 20px;
+    left: 20px;
+}}
+
+.burger_wrapper {
+    display: inline-block;
+    margin: 15px 0 0 15px;
+    position: relative;
+    height: 40px;
+    width: 65px;
+    -webkit-transition: margin .2s;
+    transition: margin .2s;
+}
+@media screen and (max-height: 480px), screen and (max-width: 650px){
+.burger_wrapper {
+    height: 25px;
+    width: 35px;
+    margin: 10px 0 13px 10px;
+    vertical-align: middle;
+}}
+@media only screen and (min-width: 651px) and (max-width: 949px){
+.burger_wrapper {
+    margin: 10px 10px 12px 10px;
+}}
+@media only screen and (min-width: 950px) and (max-width: 1250px){
+.burger_wrapper {
+    margin: 10px 10px 12px 10px;
+}}
+@media only screen and (min-width: 1251px){
+.burger_wrapper {
+    margin: 45px 0 0 45px;
+}}
+
+.burger_wrapper .burgerline1 {
+    top: 0;
+}
+
+.burger_wrapper .burgerline2 {
+    top: 50%;
+}
+
+.burger_wrapper .burgerline3 {
+    top: 100%;
+}
+.burger_wrapper>div {
+    background-color: #ffffff;
+}
+.burger_wrapper div {
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    transform-origin: center;
+    opacity: 1;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+}
+@media screen and (max-height: 480px), screen and (max-width: 650px){
+    .burger_wrapper div {
+        height: 3px;
+    }}
+
+.nav_name {
+    display: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-width: calc(100% - 90px);
+    width: calc(100% - 90px);
+}
+
+.col:after, .clr:after, .group:after, dl:after, .left_float:after, .right_float:after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both;
+    zoom: 1;
+    height: 0;
+}
