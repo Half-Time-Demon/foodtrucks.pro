@@ -8,7 +8,7 @@
 
         'On_Maintenance' => false,
 
-        'allow_ip' => array(
+        'allow_ip' => array(    // for On_Maintenance only
 
             'localhost',
 
